@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>姆莉醬問答小遊戲</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <div class="wrap">
+        <header>
+            <h1></h1>
+        </header>
+
+        <!-- 起始畫面 -->
+        <section id="start-screen" class="card">
+            <img id="avatar" src="./assets/avatar/姆莉投向.png" alt="姆莉醬頭像" />
+            <h2>姆莉醬問答小遊戲</h2>
+            <button id="start-btn">開始遊戲</button>
+        </section>
+
+        <!-- 遊戲畫面 -->
+        <section id="game-screen" class="card hidden">
+            <div class="meta">題目 <span id="current">1</span> / <span id="total">3</span></div>
+            <h2 id="question">問題會出現在這裡</h2>
+            <div id="options" class="options"></div>
+            <div id="feedback" class="feedback hidden"></div>
+            <button id="next-btn" class="hidden">下一題</button>
+        </section>
+
+        <!-- 結果畫面 -->
+        <section id="end-screen" class="card hidden">
+            <h2>遊戲結束</h2>
+            <p>你的分數：<strong id="score">0</strong></p>
+            <p>歷史最高：<strong id="best-score">0</strong></p>
+            <button id="restart-btn">再玩一次</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <div id="reward" style="display: none; text-align:center; margin-top:20px;">
+        <h2>🎉 恭喜滿分！</h2>
+        <p>你已經解鎖了通關獎勵 🎁</p>
+        <a href="reward.html">
+            <button style="padding:10px 20px; font-size:18px; border-radius:12px; cursor:pointer;">
+                ▶ 前往觀看通關影片
+            </button>
+        </a>
+    </div>
+
+
+</body>
+
+</html>
